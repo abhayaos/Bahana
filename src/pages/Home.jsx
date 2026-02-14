@@ -7,13 +7,11 @@ function Home() {
   const [result, setResult] = useState("")
 
   const tones = [
-    "Normal",
-    "Casual",
-    "Samanye",
-    "Romantic",
-    "Natak",
-    "Comedy",
-    "Serious"
+    "Class Dhilo Vayo?",
+    "Homework xutyo",
+    "Office Dhila Vayo",
+    "Girflfriend Risayo",
+    "Plan Cancel grne",
   ]
 
   const handleGenerate = () => {

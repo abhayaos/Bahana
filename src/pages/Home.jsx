@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import CookieConsent from '../components/CookieConsent'
 
 function Home() {
 
@@ -32,8 +33,8 @@ function Home() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
-
+    <main className="flex flex-col items-center relative justify-center min-h-screen bg-gray-100 px-4">
+      <CookieConsent />
       <h1 className="text-3xl font-bold mb-2 mt-8">Bahana AI</h1>
       <p className="text-lg mb-8 text-center">
         Bahana AI is a language model created by NepCoderHood.

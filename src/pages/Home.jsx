@@ -13,6 +13,13 @@ function Home() {
     "Girflfriend Risayo",
     "Plan Cancel grne",
   ]
+  const bahanaTone = [
+    "Aupacharik (Official)",
+    "Ramailo/Funny",
+    "Bhabhuk (Emotional)",
+    "Dharmatic( Flirty )",
+    "Savage / Honest"
+  ]
 
   const handleGenerate = () => {
     if (!inputText) return
@@ -55,6 +62,26 @@ function Home() {
           placeholder="Example: Gf sanga aaja coffee date cancel"
           className="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-black"
         />
+        <div>
+             <h2 className="text-xl font-semibold">Tone hera ta</h2>
+         <p>Tone choose gara tespaxi bahana laga...</p>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          {bahanaTone.map((tone, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedTone(tone)}
+              className={`px-4 py-2 rounded-lg border transition 
+                ${selectedTone === tone 
+                  ? "bg-black text-white" 
+                  : "bg-white hover:bg-gray-200"}`}
+            >
+              {tone}
+            </button>
+          ))}
+        </div>
+
 
         {/* Button */}
         <button
@@ -74,6 +101,12 @@ function Home() {
           />
         )}
 
+      </div>
+      <footer className="mt-8 text-center">
+        <p className="text-gray-600">© 2023 Bahana AI. All rights reserved.</p>
+      </footer>
+      <div className="mt-23">
+        
       </div>
 
     </main>

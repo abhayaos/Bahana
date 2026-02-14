@@ -30,7 +30,7 @@ function Home() {
       {/* Container with max width */}
       <div className="w-full max-w-xl flex flex-col gap-5">
 
-        <h2 className="text-xl font-semibold">Choose a tone</h2>
+        <h2 className="text-xl font-semibold">K Samasya Paryo?</h2>
 
         <div className="flex flex-wrap gap-3">
           {tones.map((tone, index) => (

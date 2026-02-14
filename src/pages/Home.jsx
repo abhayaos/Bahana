@@ -29,7 +29,7 @@ function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
 
-      <h1 className="text-3xl font-bold mb-2">Bahana AI</h1>
+      <h1 className="text-3xl font-bold mb-2 mt-8">Bahana AI</h1>
       <p className="text-lg mb-8 text-center">
         Bahana AI is a language model created by NepCoderHood.
       </p>
@@ -106,7 +106,7 @@ function Home() {
         <p className="text-gray-600">© 2023 Bahana AI. All rights reserved.</p>
       </footer>
       <div className="mt-23">
-        
+
       </div>
 
     </main>

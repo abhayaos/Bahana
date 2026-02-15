@@ -111,7 +111,7 @@ export default function Home() {
     toast.info('AI le bahana sochiraxu... 🧠', { autoClose: 2000 })
 
     try {
-      const { data } = await axios.post('http://localhost:8080/api/bahana', {
+      const { data } = await axios.post('https://bahana-backend-1.onrender.com/api/bahana', {
         category: selectedProblem.english,
         context:  inputText.trim(),
         tone:     selectedBahanaTone.english,
